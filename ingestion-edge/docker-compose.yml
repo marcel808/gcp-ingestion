@@ -45,6 +45,8 @@ services:
     - --mypy
     - --mypy-ignore-missing-imports
     - --cov=./ingestion_edge/
+    - tests/
+    - contract-tests/
     depends_on:
     - pubsub
     - web
